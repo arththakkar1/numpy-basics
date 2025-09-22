@@ -18,7 +18,7 @@ This project demonstrates basic usage of NumPy, saving `.npy` files, and simple 
 1. **Install Dependencies:**
 
    ```bash
-   pip install numpy pillow
+   pip install numpy matplotlib
    ```
 
 2. **Run the Code:**
@@ -26,18 +26,6 @@ This project demonstrates basic usage of NumPy, saving `.npy` files, and simple 
    - Check how arrays are saved and loaded with `.npy` files.
    - See how an image is inverted to create a dark mode effect.
 
-## Example: Inverting an Image
-
-```python
-from PIL import Image
-import numpy as np
-
-img = Image.open('light_mode_image.png')
-arr = np.array(img)
-dark_arr = 255 - arr  # Invert colors
-dark_img = Image.fromarray(dark_arr)
-dark_img.save('dark_mode_image.png')
-```
 
 ---
 
